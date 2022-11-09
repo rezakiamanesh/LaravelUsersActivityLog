@@ -20,8 +20,8 @@ class CreateLogActivitiesTable extends Migration
             $table->nullableMorphs('logable');
             $table->string('subject');
             $table->json('data')->nullable();
-            $table->string('url')->nullable()->default(Request::fullUrl());
             $table->string('crud_method')->nullable();
+            $table->string('url')->nullable()->default(Request::fullUrl());
             $table->string('request_method')->nullable()->default(Request::method());
             $table->string('ip')->nullable()->default(Request::ip());
             $table->string('agent')->nullable()->default(Request::header('user-agent'));
