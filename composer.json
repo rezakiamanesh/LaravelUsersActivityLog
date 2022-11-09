@@ -1,0 +1,34 @@
+{
+    "name": "rezakiamnesh/laravel-users-activity-log",
+    "description": "Implementing a log system for laravel`s Eloquent Models.",
+    "license": "MIT",
+    "keywords": [
+        "Laravel",
+        "Search Log",
+        "Users Activity Log"
+    ],
+    "authors": [
+        {
+            "name": "Reza Kiamanesh",
+            "email": "rezakiyamanesh@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "RezaKia\\LaravelUsersActivityLog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/database": ">=5.0",
+        "illuminate/support": ">=5.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RezaKia\\LaravelUsersActivityLog\\LaravelUsersActivityLogServiceProvider"
+            ]
+        }
+    }
+}
